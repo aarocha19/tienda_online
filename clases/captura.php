@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Script para capturar detalles de pago de Paypal
- * Autor: Marco Robles
- * Web: https://github.com/mroblesdev
- */
-
 require '../config/config.php';
 require '../config/database.php';
 
