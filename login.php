@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Pantalla para login de cliente
- * Autor: Marco Robles
- * Web: https://github.com/mroblesdev
- */
-
 require 'config/config.php';
 require 'config/database.php';
 require 'clases/clienteFunciones.php';
