@@ -6,6 +6,7 @@ require 'config/config.php';
 require 'config/database.php';
 
 $productos = isset($_SESSION['carrito']['productos']) ? $_SESSION['carrito']['productos'] : null;
+/* Se obtienen los productos del carrito almacenados en la sesión */
 
 $db = new Database();
 $con = $db->conectar();
@@ -67,6 +68,8 @@ if ($productos != null) {
                                 $precio_desc = $precio - (($precio * $descuento) / 100);
                                 $subtotal = $cantidad * $precio_desc;
                                 $total += $subtotal;
+                                /* Se realiza una consulta a la base de datos para obtener
+                                información detallada sobre los productos presentes en el carrito*/
                         ?>
                                 <tr>
                                     <td><?php echo $producto['nombre']; ?></td>
