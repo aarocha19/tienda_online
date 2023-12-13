@@ -17,5 +17,7 @@ $db = new Database();
 $con = $db->conectar();
 
 echo validaToken($id, $token, $con);
-
+/* esta parte del código valida que el usuario esta activo,
+    si esta activo lo manda a la pagina de inicio, si no,
+    entonces le dice que no ha sido validado */
 ?>
