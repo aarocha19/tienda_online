@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Script para capturar detalles de pago de Mercado Pago
- * Autor: Marco Robles
- * Web: https://github.com/mroblesdev
- */
-
 require '../config/config.php';
 require '../config/database.php';
 
