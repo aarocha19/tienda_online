@@ -13,10 +13,13 @@ if(!isset($_SESSION['token'])){
 $token_session = $_SESSION['token'];
 $orden = $_GET['orden'] ?? null;
 $token = $_GET['token'] ?? null;
+/* Se obtienen parámetros de la URL como el número de orden y el token asociado a la sesión */
 
 if (empty($orden) || empty($token) || $token != $token_session) {
     header("Location: compras.php");
     exit;
+    /*Se verifica que los parámetros requeridos estén presentes y sean válidos. 
+        Si no, redirige al usuario a la página de compras */
 }
 
 $db = new Database();
