@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Pantalla individual para mostrar el productos
- * Autor: Marco Robles
- * Web: https://github.com/mroblesdev
- */
-
 require 'config/config.php';
 require 'config/database.php';
 
